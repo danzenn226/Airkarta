@@ -103,10 +103,10 @@ export default function JakartaMapLeaflet({
       attributionControl: false,
     });
 
-    // Tile terang — CartoDB Voyager (berwarna, jelas, cocok siang hari)
+    // Tile terang — OpenStreetMap (Gratis)
     L.tileLayer(
-      "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-      { maxZoom: 19, subdomains: "abcd" },
+      "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      { maxZoom: 19 },
     ).addTo(map);
 
     // Tambah semua marker
